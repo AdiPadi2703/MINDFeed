@@ -33,9 +33,9 @@ class Config:
         self.architecture = 'vnet'
 
         # If center cropping is necessary (must be in the dataset class)
-        self.height = 128
-        self.width = 128
-        self.depth = 128
+        self.height = None
+        self.width = None
+        self.depth = None
 
         self.patch_size = (80, 112, 112)  # (D, H, W)
         self.labeled_num = 8
@@ -90,7 +90,16 @@ class Config:
     def print_config_state(self):
 
         for name, value in self.__dict__.items():
-            if value is None and name != "iteration" and name != "load_checkpoint" and name != "path_train_dataset" and name != "path_val_dataset" and name != "root_dir":
+            if value is None and name not in  [
+                "iteration", 
+                "load_checkpoint", 
+                "path_train_dataset", 
+                "path_val_dataset", 
+                "root_dir",
+                "height",
+                "width",
+                "depth"
+            ]:
                 print(f"In config.py, the {name} field has not been set! You can add it manually or use the CLI.")
                 exit(1)
             else:
