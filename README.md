@@ -15,6 +15,10 @@ The organization of this repository is as follows:
 
 If you are using a <b>different dataset</b>, you can refer the dataset classes in `code/dataset.py` to write your own custom dataset class. You will also have to write your own validation loop (refer `code/validator.py`) based on the classes or regions of interest in your dataset, or use the `validation_loop_binary3D` function if doing binary segmentation.
 
+We used an NVIDIA RTX 4060 8GB GPU for all our experiments. Memory requirements depend on the dataset being used. We recommend having at least 8GB of VRAM to comfortably run all datasets.
+
+## Training
+
 To make use of this repository:
 
 - First, clone the repository
@@ -31,7 +35,7 @@ conda env create -f environment.yml -n <env-name>
 conda activate <env-name>
 ```
 
-- Open the `code/config.py` file and set your desired configurations. You can include the paths to your dataset splits and the number of classes here. <b>This can also be done via the command line.</b> To see the list of fields, simply run
+- Open the `code/config.py` file and set your desired configurations. You can refer to the `dataset_configs.txt` file to see the configurations used in the paper. <b>This can also be done via the command line.</b> To see the list of fields, simply run
 
 ```
 python runner.py --help
@@ -43,6 +47,14 @@ python runner.py --help
 python runner.py
 ```
 
+## Evaluation
+
+To evaluate the saved checkpoint, you can use the `code/validator.py` file on its own. We have provided an example case on LA 2018, and this example can be followed for other datasets by replacing the dataset class, changing the config parameters, and validator function. Once setup, just run:
+
+```
+python validator.py
+```
+
 ## Data
 
 You can use the following links to download the datasets:
@@ -52,7 +64,7 @@ You can use the following links to download the datasets:
 - <a href="https://github.com/himashi92/Co-BioNet/tree/main/data">LA 2018</a>  
 - <a href="https://github.com/himashi92/Co-BioNet/tree/main/data">NIH Pancreas-CT</a>  
 
-For BraTS 2019 and BraTS-GLI, there is a script to create and fill the train, test and val directories as per the split lists.
+For BraTS 2019 and BraTS-GLI, there is a `script.py` file in their respective directories to create and fill the train, test and val directories as per the split lists.
 
 
 ## Citing

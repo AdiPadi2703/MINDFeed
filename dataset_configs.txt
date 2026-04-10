@@ -1,0 +1,167 @@
+This text file contains the values for each field in the config.py file for each dataset used.
+
+###############################################################################################
+
+LA 2018
+
+exp_name             : LA
+root_dir             : ../data/LA2018
+path_train_dataset   : None
+path_val_dataset     : None
+architecture         : vnet
+height               : None
+width                : None
+depth                : None
+patch_size           : (80, 112, 112)
+labeled_num          : 8
+total_batch_size     : 4
+labeled_batch_size   : 2
+num_workers          : 8
+max_iterations       : 30000
+iteration_scaler     : 150
+consistency          : 0.1
+consistency_rampup   : 200
+num_classes          : 2
+learning_rate        : 0.1
+momentum             : 0.9
+weight_decay         : 0.0001
+num_modalities       : 1
+T                    : 5
+num_decoders         : 4
+seed                 : 1337
+a                    : 0.25
+b                    : 0.75
+cutmix_prob          : 1.0
+cutmix_beta          : 4.0
+stride_xy            : 18
+stride_z             : 4
+save_path            : ./Results/LA_8/best_model.pth
+iteration            : None
+load_checkpoint      : None
+num_training         : 80
+labeled_ratio        : 0.1
+device               : cuda
+
+##############################################################################################
+
+Pancreas-CT
+
+exp_name             : Pancreas
+root_dir             : ../data/Pancreas
+path_train_dataset   : None
+path_val_dataset     : None
+architecture         : vnet
+height               : None
+width                : None
+depth                : None
+patch_size           : (96, 96, 96)
+labeled_num          : 6
+total_batch_size     : 4
+labeled_batch_size   : 2
+num_workers          : 8
+max_iterations       : 30000
+iteration_scaler     : 150
+consistency          : 0.1
+consistency_rampup   : 200
+num_classes          : 2
+learning_rate        : 0.1
+momentum             : 0.9
+weight_decay         : 0.0001
+num_modalities       : 1
+T                    : 5
+num_decoders         : 4
+seed                 : 1337
+a                    : 0.25
+b                    : 0.75
+cutmix_prob          : 1.0
+cutmix_beta          : 4.0
+stride_xy            : 16
+stride_z             : 16
+save_path            : ./Results/Pancreas_6/best_model.pth
+iteration            : None
+load_checkpoint      : None
+num_training         : 62
+labeled_ratio        : 0.0967741935483871
+device               : cuda
+
+##############################################################################################
+
+BraTS 2019
+
+exp_name             : BraTS2019
+path_train_dataset   : ../data/BraTS2019/train/
+path_val_dataset     : ../data/BraTS2019/test/
+architecture         : unet3D
+height               : 128
+width                : 128
+depth                : 128
+patch_size           : (96, 96, 96)
+labeled_num          : 25
+total_batch_size     : 4
+labeled_batch_size   : 2
+num_workers          : 8
+max_iterations       : 30000
+iteration_scaler     : 150
+consistency          : 0.1
+consistency_rampup   : 200
+num_classes          : 4
+learning_rate        : 0.1
+momentum             : 0.9
+weight_decay         : 0.0001
+num_modalities       : 2
+T                    : 5
+num_decoders         : 4
+seed                 : 1337
+a                    : 0.25
+b                    : 0.75
+cutmix_prob          : 1.0
+cutmix_beta          : 4.0
+save_path            : ./Results/BraTS2019_25/best_model.pth
+iteration            : None
+load_checkpoint      : None
+num_training         : 250
+labeled_ratio        : 0.1
+device               : cuda
+
+##############################################################################################
+
+BraTS-GLI 2024
+
+exp_name             : BraTS2024
+path_train_dataset   : ../data/BraTS2024/train/
+path_val_dataset     : ../data/BraTS2024/test/
+architecture         : unet3D
+height               : 128
+width                : 128
+depth                : 128
+patch_size           : (96, 96, 96)
+labeled_num          : 25
+total_batch_size     : 4
+labeled_batch_size   : 2
+num_workers          : 8
+max_iterations       : 30000
+iteration_scaler     : 150
+consistency          : 0.1
+consistency_rampup   : 200
+num_classes          : 5
+learning_rate        : 0.1
+momentum             : 0.9
+weight_decay         : 0.0001
+num_modalities       : 2
+T                    : 5
+num_decoders         : 4
+seed                 : 1337
+a                    : 0.25
+b                    : 0.75
+cutmix_prob          : 1.0
+cutmix_beta          : 4.0
+save_path            : ./Results/BraTS2024_25/best_model.pth
+iteration            : None
+load_checkpoint      : None
+num_training         : 945
+labeled_ratio        : 0.026455026455026454
+device               : cuda
+
+##############################################################################################
+
+
