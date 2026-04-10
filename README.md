@@ -17,6 +17,18 @@ If you are using a <b>different dataset</b>, you can refer the dataset classes i
 
 We used an NVIDIA RTX 4060 8GB GPU for all our experiments. Memory requirements depend on the dataset being used. We recommend having at least 8GB of VRAM to comfortably run all datasets.
 
+## Data
+
+You can use the following links to download the datasets:
+
+- <a href="https://www.kaggle.com/datasets/aryashah2k/brain-tumor-segmentation-brats-2019">BraTS 2019</a> 
+- <a href="https://www.synapse.org/Synapse:syn53708249/files/">BraTS-GLI 2024</a>  
+- <a href="https://github.com/himashi92/Co-BioNet/tree/main/data">LA 2018</a>  
+- <a href="https://github.com/himashi92/Co-BioNet/tree/main/data">NIH Pancreas-CT</a>  
+
+For BraTS 2019 and BraTS-GLI, there is a `script.py` file in their respective directories to create and fill the train, test and val directories as per the split lists.
+
+
 ## Training
 
 To make use of this repository:
@@ -54,18 +66,6 @@ To evaluate the saved checkpoint, you can use the `code/validator.py` file on it
 ```
 python validator.py
 ```
-
-## Data
-
-You can use the following links to download the datasets:
-
-- <a href="https://www.kaggle.com/datasets/aryashah2k/brain-tumor-segmentation-brats-2019">BraTS 2019</a> 
-- <a href="https://www.synapse.org/Synapse:syn53708249/files/">BraTS-GLI 2024</a>  
-- <a href="https://github.com/himashi92/Co-BioNet/tree/main/data">LA 2018</a>  
-- <a href="https://github.com/himashi92/Co-BioNet/tree/main/data">NIH Pancreas-CT</a>  
-
-For BraTS 2019 and BraTS-GLI, there is a `script.py` file in their respective directories to create and fill the train, test and val directories as per the split lists.
-
 
 ## Citing
 
