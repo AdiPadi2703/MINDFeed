@@ -28,6 +28,28 @@ You can use the following links to download the datasets:
 
 For BraTS 2019 and BraTS-GLI, there is a `script.py` file in their respective directories to create and fill the train, test and val directories as per the split lists.
 
+For Pancreas-CT and LA 2018, we followed the following file structure:
+
+```
+data/
+├── LA2018/
+│   ├── 0RZDK210BSMWAA6467LU/
+│   │   └── mri_norm2.h5
+│   ├── 1D7CUD1955YZPGK8XHJX/
+│   │   └── mri_norm2.h5
+│   ├── ...
+│   ├── test.list
+│   └── train.list
+└── Pancreas/
+    ├── data/
+    │   ├── image0001_norm.h5
+    │   ├── image0002_norm.h5
+    │   ├── ...
+    │   └── image0082_norm.h5
+    ├── test.list
+    └── train.list
+```
+
 
 ## Training
 
