@@ -90,7 +90,7 @@ BraTS 2019
 
 exp_name             : BraTS2019
 path_train_dataset   : ../data/BraTS2019/train/
-path_val_dataset     : ../data/BraTS2019/test/
+path_val_dataset     : ../data/BraTS2019/val/
 architecture         : unet3D
 height               : 128
 width                : 128
@@ -129,7 +129,7 @@ BraTS-GLI 2024
 
 exp_name             : BraTS2024
 path_train_dataset   : ../data/BraTS2024/train/
-path_val_dataset     : ../data/BraTS2024/test/
+path_val_dataset     : ../data/BraTS2024/val/
 architecture         : unet3D
 height               : 128
 width                : 128

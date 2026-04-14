@@ -18,7 +18,7 @@ class Config:
         # Paths if dataset is explicitly split. If not, set both to None
         if self.exp_name in ["BraTS2019", "BraTS2024"]:
             self.path_train_dataset = f"../data/{self.exp_name}/train/"
-            self.path_val_dataset = f"../data/{self.exp_name}/test/"
+            self.path_val_dataset = f"../data/{self.exp_name}/val/"
         else:
             # Root path if lists are provided instead of explicit split 
             # (train.list, test.list, etc.)
