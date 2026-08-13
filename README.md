@@ -18,7 +18,7 @@ The organization of this repository is as follows:
 
 If you are using a <b>different dataset</b>, you can refer the dataset classes in `code/dataset.py` to write your own custom dataset class. You will also have to write your own validation loop (refer `code/validator.py`) based on the classes or regions of interest in your dataset, or use the `validation_loop_binary3D` function if doing binary segmentation.
 
-We used an NVIDIA RTX 4060 8GB GPU for all our experiments. Memory requirements depend on the dataset being used. We recommend having at least 8GB of VRAM to comfortably run all datasets.
+We used an NVIDIA RTX 4060 8GB GPU for all our experiments. Memory requirements depend on the configurations/hyperparameters being used (number of classes, input channels, etc.). We recommend having at least 8GB of VRAM to comfortably run all datasets used in the paper.
 
 ## Data
 
