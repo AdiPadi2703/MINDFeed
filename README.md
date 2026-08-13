@@ -1,7 +1,7 @@
 # MINDFeed
 
 This is the implementation for the paper titled:<br />
-<b>MINDFeed: Mutual Information-Guided Single-Network Consistency Learning for Semi-Supervised 3D Glioma Segmentation</b> (TMLR 2026)
+<b>MINDFeed: Mutual Information-Guided Single-Network Consistency Learning for Semi-Supervised 3D Glioma Segmentation</b> (TMLR 2026, J2C Certification)
 <br />
 <br />
 OpenReview Link: https://openreview.net/forum?id=YI7AX6mrZO
