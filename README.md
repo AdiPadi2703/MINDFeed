@@ -97,8 +97,16 @@ python validator.py
 If you use our paper or this implementation in your work, please use the following to cite our work:
 
 ```
-
-
+@article{
+ubaradka2026mindfeed,
+title={{MINDF}eed: Mutual Information-Guided Single-Network Consistency Learning for Semi-Supervised 3D Medical Image Segmentation},
+author={Adithya S. Ubaradka and Jeny Rajan},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2026},
+url={https://openreview.net/forum?id=YI7AX6mrZO},
+note={J2C Certification}
+}
 ```
 
 We are grateful to the authors of <a href="https://github.com/HiLab-git/SSL4MIS">SSL4MIS</a>, <a href="https://github.com/himashi92/Co-BioNet">Co-BioNet</a>, <a href="https://github.com/WYC-321/MCF">MCF, <a href="https://github.com/ZhenZHAO/AD-MT">AD-MT</a> and <a href="https://github.com/ortonwang/SGRS-Net">SGRS-Net</a> for their implementations. 
